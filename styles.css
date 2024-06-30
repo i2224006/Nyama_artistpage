@@ -8,20 +8,17 @@
     display: grid;
     place-items: center;
     pointer-events: none;
-  }
-  .load {
+}
+.load {
     object-fit: cover;
     width: 80%;
     height: auto;
-    animation: spin 4s linear 1; /* 一度だけ再生 */
-  }
-  
-  /* ローディング完了したらローディング画面を隠す */
-  .loaded {
+    animation: spin 4s linear 1; 
+}
+.loaded {
     opacity: 0;
     visibility: hidden;
-    
-  }
+}
 
 body {
     font-family: Arial, sans-serif;
