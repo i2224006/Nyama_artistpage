@@ -87,7 +87,8 @@ transform: scale(1.1);
     width: auto;
 }
 .horizontal img {
-    width: 450px; /* 横長の画像の幅を設定 */
+    max-width: 100%; /* 横長の画像の幅を設定 */
+    width: 450px;
     height: auto;
 }
 
