@@ -1,7 +1,7 @@
 /* ローディング画面 */
 #loading {
-    transition: all 5s;
-    background-color: #ddd;
+    transition: all 2.5s;
+    background-color: #8e8d8d;
     position: fixed;
     inset: 0;
     z-index: 9999;
@@ -13,7 +13,7 @@
     object-fit: cover;
     width: 80%;
     height: auto;
-    animation: spin 2s linear 1; /* 一度だけ再生 */
+    animation: spin 4s linear 1; /* 一度だけ再生 */
   }
   
   /* ローディング完了したらローディング画面を隠す */
