@@ -1,6 +1,6 @@
 /* ローディング画面 */
 #loading {
-    transition: all 2.5s;
+    transition: all 3s;
     background-color: #8e8d8d;
     position: fixed;
     inset: 0;
@@ -18,7 +18,7 @@
   
   /* ローディング完了したらローディング画面を隠す */
   .loaded {
-    opacity: 0.3;
+    opacity: 0;
     visibility: hidden;
     
   }
