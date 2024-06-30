@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyama's Illust</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="illust.css">
+    <script src="loading.js" defer></script>
+</head>
+<body>
+    <div id="loading">
+        <img class="spinner" src="images/Nyama_logo.webp" alt="">
+    </div>
+
+
+    <header>
+        <h1><a href="index.html">Nyama's World</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>                
+                <li><a href="music.html">Music</a></li>
+                <li><a href="illust.html">Illust</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>        
+        <div class="illust-gallery">
+            <h2>Illust</h2>
+            <div class="vertical">
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama01.webp" alt="Illust 1" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama02.webp" alt="Illust 2" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama03.webp" alt="Illust 3" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama04.webp" alt="Illust 4" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama05.webp" alt="Illust 5" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama06.webp" alt="Illust 6" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama19.webp" alt="Illust 7" ></div>                             
+            
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama20.webp" alt="Illust 8" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama07.webp" alt="Illust 9" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama08.webp" alt="Illust 10" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama09.webp" alt="Illust 11" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama10.webp" alt="Illust 12" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama11.webp" alt="Illust 13" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama12.webp" alt="Illust 14" ></div>        
+            </div>
+            <div class="horizontal">
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama13.webp" alt="Illust 15" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama14.webp" alt="Illust 16" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama15.webp" alt="Illust 17" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama16.webp" alt="Illust 18" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama17.webp" alt="Illust 19" ></div>
+                <div onclick="openModal( 'images/Nyama01.webp')"><img src="images/Nyama18.webp" alt="Illust 20" ></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="Expanded view">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Nyama's World</p>
+    </footer>
+    <script>
+        function openModal(src) {
+            document.getElementById("modal-image").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+</html>

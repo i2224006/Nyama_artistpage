@@ -1,0 +1,93 @@
+/* モーダルのスタイル */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+.modal-content {
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;
+}
+.modal img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.close {
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff9f0;
+    border-radius: 15px;
+}
+.illust-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.illust-gallery .vertical {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap
+}
+
+.illust-gallery .horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.illust-gallery img {
+    margin: 10px;
+    border-radius: 10px;
+}
+ /* 縦画像に拡大アニメーションを追加 */
+.vertical div {
+        transition: transform 0.3s ease;
+}
+.vertical div:hover {
+    transform: scale(1.1); /* 1.1倍に拡大 */
+}
+ /* よこ画像に拡大アニメーションを追加 */
+.horizontal div {
+    transition: transform 0.3s ease; 
+}
+.horizontal div:hover {
+transform: scale(1.1); 
+}
+
+
+
+.vertical img {
+    height: 300px; /* 縦長の画像の高さを設定 */
+    width: auto;
+}
+.horizontal img {
+    width: 450px; /* 横長の画像の幅を設定 */
+    height: auto;
+}
+

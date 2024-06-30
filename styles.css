@@ -1,0 +1,87 @@
+/* ローディング画面 */
+#loading {
+    transition: all 5s;
+    background-color: #ddd;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+  }
+  .load {
+    object-fit: cover;
+    width: 80%;
+    height: auto;
+    animation: spin 2s linear 1; /* 一度だけ再生 */
+  }
+  
+  /* ローディング完了したらローディング画面を隠す */
+  .loaded {
+    opacity: 0.3;
+    visibility: hidden;
+    
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5caca;
+}
+
+header {
+    background-color: #d41c52;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #f69db8;
+    color: #650101;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #d41c52;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+img {
+    /* 画像ダウンロード禁止 */
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-touch-callout: none;
+    -moz-user-select: none;
+    user-select: none;
+    
+}

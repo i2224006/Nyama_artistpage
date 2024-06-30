@@ -1,0 +1,55 @@
+section {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+}
+section h1{
+    text-align: center;
+}
+
+.music-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+
+
+#collection{
+    background-color: #d41c52;
+    color: white;
+    border-radius: 20px;
+    width: 280px;
+    padding: 5px;
+    text-align: center;
+}
+
+.music-gallery div{
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.youtube-channel a:hover {
+    background-color: #f69db8;
+    color: #650101;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.youtube-channel {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.youtube-channel a {
+    background-color: #d41c52;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+}
