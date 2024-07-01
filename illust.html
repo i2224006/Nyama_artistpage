@@ -59,9 +59,10 @@
         </div>
     </section>
 
-    <div id="myModal" class="modal">
+    <!--モーダルの設定-->
+    <div id="myModal" class="modal" onclick="closeModal(event)">
         <span class="close" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
+        <div class="modal-content" onclick="event.stopPropagation()">
             <img id="modal-image" src="" alt="Expanded view">
         </div>
     </div>
@@ -69,7 +70,9 @@
     <footer>
         <p>&copy; 2024 Nyama's World</p>
     </footer>
+
     <script>
+        /*モーダルの設定*/
         function openModal(src) {
             document.getElementById("modal-image").src = src;
             document.getElementById("myModal").style.display = "block";
