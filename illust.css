@@ -9,6 +9,7 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.8);
+    align-items: center;
 }
 .modal-content {
     margin: 15% auto;
@@ -18,8 +19,9 @@
 }
 .modal img {
     width: 100%;
-    height: auto;
+    max-height: 90vh;
     border-radius: 10px;
+    object-fit: contain;
 }
 .close {
     color: white;
