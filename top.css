@@ -15,9 +15,11 @@ section {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #888;
-    animation: float 10s ease-in-out infinite; /*変更｜ふわふわアニメーションを追加*/
+    object-fit: cover; /* 画像をコンテナ内にフィットさせる */
+    animation: float 10s ease-in-out infinite; /*アニメーションを追加*/
+    transition: opacity 1s ease-in-out; 
 }
-@keyframes float { /*変更｜ふわふわアニメーションのキーフレームを追加*/
+@keyframes float { /*アニメーションのキーフレーム*/
     0% ,50%,100%{
         transform: translateY(0);
         rotate: 0;
@@ -81,7 +83,6 @@ section {
     padding: 10px;
 }
 .sns-links img {
-    //width: 30px;
     height: 30px;
     transition: transform 0.3s;
 }
