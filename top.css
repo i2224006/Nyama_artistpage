@@ -63,6 +63,7 @@ section {
 }
 .sns-links a {
     margin: 0 20px;
+    padding: 10px;
 }
 .sns-links img {
     //width: 30px;
