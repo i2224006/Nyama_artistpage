@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'images/TOP_IA.webp',
         'images/Nyama04.webp',
         'images/Nyama19.webp',
-        'images/Nyama01.webp'
+        'images/Nyama01.webp',
+        'images/Nyama02.webp',
+        'images/Nyama08.webp',
+        'images/Nyama07.webp'
     ]; 
 
     const mainImage = document.getElementById('main-image');
