@@ -15,6 +15,21 @@ section {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #888;
+    animation: float 10s ease-in-out infinite; /*変更｜ふわふわアニメーションを追加*/
+}
+@keyframes float { /*変更｜ふわふわアニメーションのキーフレームを追加*/
+    0% ,50%,100%{
+        transform: translateY(0);
+        rotate: 0;
+    }
+    25% {
+        transform: translateY(-10px);
+        rotate: -1.5deg;
+    }
+    75%{
+        transform: translateY(-10px);
+        rotate: 2deg;
+    }
 }
 
 .info {
