@@ -25,10 +25,10 @@ section {
     border-radius: 10px;
     color: white;
 }
-.info p{
+.info p {
     margin-bottom: 25px;
 }
-.line{
+.line {
     background-color: #ffffff;
     padding: 2px;
     border-radius: 20px;
@@ -36,7 +36,6 @@ section {
 .tag {
     margin: 20px 0;
 }
-
 .tag ul {
     list-style: none;
     padding: 0;
@@ -44,11 +43,9 @@ section {
     display: flex;
     justify-content: center;
 }
-
 .tag ul li {
     margin: 0 10px;
 }
-
 .tag ul li a {
     background-color: #fff;
     color: #000;
@@ -57,9 +54,23 @@ section {
     text-decoration: none;
     transition: background-color 0.3s;
 }
-
 .tag ul li a:hover {
     background-color: #f69db8;
+}
+
+.sns-links {
+    margin-bottom: 10px;
+}
+.sns-links a {
+    margin: 0 20px;
+}
+.sns-links img {
+    //width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+.sns-links img:hover {
+    transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
@@ -67,7 +78,6 @@ section {
         flex-direction: column;
         align-items: center;
     }
-
     .info {
         margin: 20px 0 0 0;
     }
