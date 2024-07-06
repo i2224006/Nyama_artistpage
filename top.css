@@ -12,6 +12,7 @@ section {
 
 .main-image {
     width: 500px;
+    height: 650px; /* 固定の高さを設定 */
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #888;
@@ -19,8 +20,9 @@ section {
     animation: float 10s ease-in-out infinite; /*アニメーションを追加*/
     transition: opacity 1s ease-in-out; 
 }
+
 @keyframes float { /*アニメーションのキーフレーム*/
-    0% ,50%,100%{
+    0%, 50%, 100% {
         transform: translateY(0);
         rotate: 0;
     }
@@ -28,7 +30,7 @@ section {
         transform: translateY(-10px);
         rotate: -1.5deg;
     }
-    75%{
+    75% {
         transform: translateY(-10px);
         rotate: 2deg;
     }
@@ -42,17 +44,21 @@ section {
     border-radius: 10px;
     color: white;
 }
+
 .info p {
     margin-bottom: 25px;
 }
+
 .line {
     background-color: #ffffff;
     padding: 2px;
     border-radius: 20px;
 }
+
 .tag {
     margin: 20px 0;
 }
+
 .tag ul {
     list-style: none;
     padding: 0;
@@ -60,9 +66,11 @@ section {
     display: flex;
     justify-content: center;
 }
+
 .tag ul li {
     margin: 0 10px;
 }
+
 .tag ul li a {
     background-color: #fff;
     color: #000;
@@ -71,6 +79,7 @@ section {
     text-decoration: none;
     transition: background-color 0.3s;
 }
+
 .tag ul li a:hover {
     background-color: #f69db8;
 }
@@ -78,14 +87,17 @@ section {
 .sns-links {
     margin-bottom: 10px;
 }
+
 .sns-links a {
     margin: 0 20px;
     padding: 10px;
 }
+
 .sns-links img {
     height: 30px;
     transition: transform 0.3s;
 }
+
 .sns-links img:hover {
     transform: scale(1.2);
 }
