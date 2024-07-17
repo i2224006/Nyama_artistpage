@@ -20,7 +20,7 @@ section h1{
 
 
 #collection{
-    background-color: #d41c52;
+    background-color: #b69df6;
     color: white;
     border-radius: 20px;
     width: 280px;
@@ -41,22 +41,20 @@ section h1{
 }
 
 
-.youtube-channel a:hover {
-    background-color: #f69db8;
-    color: #650101;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-
 .youtube-channel {
     text-align: center;
     margin: 40px 0;
 }
 
 .youtube-channel a {
-    background-color: #d41c52;
+    background-color: #b69df6;
     color: white;
     padding: 20px 30px;
     border-radius: 8px;
     text-decoration: none;
+}
+.youtube-channel a:hover {
+    background-color: #9d9df6;
+    color: #650101;
+    transition: background-color 0.3s, color 0.3s;
 }

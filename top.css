@@ -2,7 +2,7 @@ section {
     max-width: 1200px;
     padding: 20px;
     margin: 10px auto;
-    background-color: #f5caca;
+    background-color: #f8f9fd97;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@ section {
 }
 
 .info {
-    background-color: #d41c52;
+    background-color: #9a64cab5;
     text-align: center;
     margin: 0 20px;
     padding: 10px 20px;
@@ -81,7 +81,7 @@ section {
 }
 
 .tag ul li a:hover {
-    background-color: #f69db8;
+    background-color: #b69df6;
 }
 
 .sns-links {
